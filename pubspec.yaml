@@ -1,0 +1,31 @@
+name: indovina_il_calciatore
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.11  # Per accedere ai file locali
+  http: ^0.13.4  # Nel caso voglia caricare JSON da una rete
+  provider: ^6.0.4  # Per la gestione dello stato (opzionale, se desideri un pattern più strutturato)
+  cupertino_icons: ^1.0.8  # Per icone stile iOS
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # Linter consigliati per il progetto
+
+flutter:
+  uses-material-design: true  # Per usare le icone Material Design
+  
+  assets:
+    - assets/calciatori_data.json  # Aggiungi il tuo file JSON agli assets
+
